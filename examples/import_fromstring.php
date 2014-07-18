@@ -4,7 +4,7 @@ include('../SimplestXML.php');
 $sx = new SimplestXML();
 
 /* setup */
-$data_b = array("b1" => "vb1", "b2" => "vb2");
+$data_b = array("b1" => "<vb1>x</vb1>", "b2" => "<vb2>y</vb2>");
 
 $data_c = array();
 $data_c[] = array("c-I1" => "vc-I1", "c-I2" => "vc-I2");
