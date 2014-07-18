@@ -22,29 +22,6 @@ Example
 -------
 
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-  <a>va</a>
-  <b>
-    <b1><![CDATA[<vb1>x</vb1>]]></b1>
-    <b2><![CDATA[<vb2>y</vb2>]]></b2>
-  </b>
-  <c>
-    <item>
-      <c-I1>vc-I1</c-I1>
-      <c-I2>vc-I2</c-I2>
-    </item>
-    <item>
-      <c-II>vc-II</c-II>
-    </item>
-    <item>
-      <c-III>vc-III</c-III>
-    </item>
-  </c>
-</root>
-```
-<=>
-```
 array(3) {
   ["a"]=>
   string(2) "va"
@@ -76,4 +53,27 @@ array(3) {
     }
   }
 }
+```
+<=>
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <a>va</a>
+  <b>
+    <b1><![CDATA[<vb1>x</vb1>]]></b1>
+    <b2><![CDATA[<vb2>y</vb2>]]></b2>
+  </b>
+  <c>
+    <item>
+      <c-I1>vc-I1</c-I1>
+      <c-I2>vc-I2</c-I2>
+    </item>
+    <item>
+      <c-II>vc-II</c-II>
+    </item>
+    <item>
+      <c-III>vc-III</c-III>
+    </item>
+  </c>
+</root>
 ```
