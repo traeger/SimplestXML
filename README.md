@@ -1,7 +1,7 @@
 SimplestXML
 ===========
 
-Most simple Associative Array &lt;=> XML Conversion in PHP (with UTF8 support)
+Most simple Associative Array &lt;=> XML Conversion in PHP (with UTF8 and CDATA support)
 
 Use
 -------
@@ -26,8 +26,8 @@ Example
 <root>
   <a>va</a>
   <b>
-    <b1>vb1</b1>
-    <b2>vb2</b2>
+    <b1><![CDATA[<vb1>x</vb1>]]></b1>
+    <b2><![CDATA[<vb2>y</vb2>]]></b2>
   </b>
   <c>
     <item>
@@ -51,9 +51,9 @@ array(3) {
   ["b"]=>
   array(2) {
     ["b1"]=>
-    string(3) "vb1"
+    string(12) "<vb1>x</vb1>"
     ["b2"]=>
-    string(3) "vb2"
+    string(12) "<vb2>y</vb2>"
   }
   ["c"]=>
   array(3) {
