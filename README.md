@@ -6,7 +6,7 @@ Most simple Associative Array &lt;=> XML Conversion in PHP (with UTF8 and CDATA 
 Use
 -------
 
-Associative Array => Formatted UTF8 XML
+##### Associative Array => Formatted UTF8 XML
 ```
 $sx = new SimplestXML();
 $xml = $sx->to_xml('root', $data);
@@ -18,7 +18,7 @@ $sx->makefileheader('xmlfilename');
 echo $sx->to_xml('root', $data);
 ```
 
-Formatted UTF8 XML => Associative Array
+##### Formatted UTF8 XML => Associative Array
 ```
 $sx = new SimplestXML();
 $data = $sx->from_xml($xml);
