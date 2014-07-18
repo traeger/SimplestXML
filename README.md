@@ -11,11 +11,22 @@ Associative Array => Formatted UTF8 XML
 $sx = new SimplestXML();
 $xml = $sx->to_xml('root', $data);
 ```
+or to create a downloadable xml file
+```
+$sx = new SimplestXML();
+$sx->makefileheader('xmlfilename');
+echo $sx->to_xml('root', $data);
+```
 
 Formatted UTF8 XML => Associative Array
 ```
 $sx = new SimplestXML();
 $data = $sx->from_xml($xml);
+```
+or
+```
+$sx = new SimplestXML();
+$data = $sx->from_xmlfile($xmlfile);
 ```
 
 Example
