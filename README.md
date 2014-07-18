@@ -1,18 +1,18 @@
 SimplestXML
 ===========
 
-Most simple Assoziative Array &lt;=> XML Conversion in PHP (with UTF8 support)
+Most simple Associative Array &lt;=> XML Conversion in PHP (with UTF8 support)
 
 Use
 -------
 
-Assoziative Array => Formatted UTF8 XML
+Associative Array => Formatted UTF8 XML
 ```
 $sx = new SimplestXML();
 $xml = $sx->to_xml('root', $data);
 ```
 
-Formatted UTF8 XML => Assoziative Array
+Formatted UTF8 XML => Associative Array
 ```
 $sx = new SimplestXML();
 $data = $sx->from_xml($xml);
